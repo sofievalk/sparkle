@@ -12,7 +12,8 @@ export enum EmojiReactionType {
   mindblown = "mindblown",
   octopus = "octopus",
   robot = "robot",
-  buzz = "buzz"
+  buzz = "buzz",
+  encore = "encore"
 }
 
 export const TextReactionType = "messageToTheBand" as const;
@@ -123,6 +124,13 @@ export const EmojiReactions: ReactionData<EmojiReactionType>[] = [
     text: "🐝",
     ariaLabel: "honeybee-emoji",
     audioPath: "/sounds/bees.mp3",
+  },
+  {
+    type: EmojiReactionType.sparkle,
+    name: "encore",
+    text: "🐣",
+    ariaLabel: "hatching_chick-emoji",
+    audioPath: "/sounds/hatching_chick.mp3",
   },
 ];
 
